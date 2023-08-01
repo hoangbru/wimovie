@@ -16,7 +16,7 @@ const Trailer:FC<Props> = ({href}) => {
       hover:ring-1 ring-zinc-50 ring-offset-1 rounded-md
     '>
         <Image
-            src={"/images/poster.jpeg"}
+            src={"/images/luca-backdrop.jpeg"}
             alt="trailer image"
             width={75}
             height={45}

@@ -15,6 +15,7 @@ import Cast from "./Cast";
 import InfoFilm from "./InfoFilm";
 import EpisodeItem from "./EpisodeItem";
 import FrameWatchFilm from "./FrameWatchFilm";
+import Search from "./Search";
 
 export {
     Avatar, 
@@ -33,5 +34,6 @@ export {
     Cast,
     InfoFilm,
     EpisodeItem,
-    FrameWatchFilm
+    FrameWatchFilm,
+    Search
 }
