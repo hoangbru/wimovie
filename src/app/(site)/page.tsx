@@ -1,7 +1,8 @@
 "use client";
 
 // Component
-import { Backdrop, Button, LikeButton, Overview, SectionFilm, Trailer } from "@/components";
+import { Backdrop, Button, LikeButton, Overview, Search, SectionFilm, Trailer } from "@/components";
+import Link from "next/link";
 
 // hooks
 import { useState } from "react";
@@ -30,6 +31,9 @@ export default function Home() {
       
       <Backdrop image="/images/backdrop.jpeg"/>
       {/* <div className="bg-gradient-to-l from-gray-950"> */}
+      <div className="absolute top-2 right-8">
+        <Search/>
+      </div>
       <div className="absolute right-4 top-20 w-[40%] flex flex-col px-3 gap-5 text-right">
         <h2 className="text-white font-semibold text-7xl">Luca</h2>
         <div className="flex gap-5 justify-end items-center">
@@ -48,7 +52,9 @@ export default function Home() {
         </div>
         <div className="flex justify-end">
           <Button className="flex gap-3 bg-[#DB9100] justify-between items-center">
+            <Link href={`/movies/1`}>
             Play
+            </Link>
             <HiPlayCircle size={32} color="#fff" />
           </Button>
         </div>
